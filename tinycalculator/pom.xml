@@ -5,7 +5,7 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.muellerbruehl</groupId>
+  <groupId>com.oleksiy</groupId>
   <artifactId>TinyCalculator</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
@@ -41,7 +41,7 @@
         <version>2.19.1</version> <!-- 2.20.1 fails! -->
         <configuration>
           <excludes>
-            <exclude>de.muellerbruehl.selenium.*</exclude>
+            <exclude>com.oleksiy.selenium.*</exclude>
           </excludes>
         </configuration>
           
