@@ -1,0 +1,7 @@
+.idea
+*.iml
+*.out
+tinycalculator/*.iml
+tinycalculator/.idea
+out
+target
