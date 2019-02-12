@@ -1,13 +1,13 @@
 package com.oleksiy.tinycalculator;
 
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Named
-@RequestScoped
+@SessionScoped
 public class TinyCalculator implements Serializable {
     private static final Logger logger = Logger.getLogger("TinyCalculator");
 
