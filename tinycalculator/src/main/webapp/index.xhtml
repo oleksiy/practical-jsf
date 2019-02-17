@@ -9,6 +9,31 @@
 </h:head>
 <h:body>
     <h1>TinyCalculator</h1>
+    #{tinyCalculator.result = 10}
+    <br/>
+    #{tinyCalculator.result = tinyCalculator.result + 10}
+    <br/>
+    #{tinyCalculator.result}
+    <br/>
+    #{tinyCalculator.result = 10}
+    <br/>
+    #{tinyCalculator.result += 10} <!-- string concat, not math -->
+    <h:message for="${tinyCalculator.result += 10}"></h:message>
+    <br/>
+    #{tinyCalculator.result}
+    <br/>
+    <pre>
+    <h:outputFormat>
+        Has Key "test" in application scope?: #{applicationScope.containsKey("test")}
+        Context: #{application.contextPath}
+        Cookie Value for JSESSIONID: #{cookie.get("JSESSIONID").value}
+        Param values:  #{param.values}
+        Request: #{request}
+        Session: #{session}
+        This code is added in real time
+    </h:outputFormat>
+    <br/>
+    </pre>
     <h:form id="form">
         <div>
             <h:outputLabel value="Param1: "/>
@@ -35,14 +60,14 @@
         </div>
 
         <hr/>
-        <h:commandButton value="HTML friendly version" action="HtmlFriendlyCalc.xhtml"/>
+        <h:commandButton value="HTML friendly version" action="HTMLFriendlyCalc.xhtml"/>
 
         <hr/>
         Observe the component tree by clicking this button:
         <h:commandButton value="Print" action="#{util.printTree}"/>
 
-        Or press Ctrl-Shift-1
-        <ui:debug hotkey="1"/>
+        Or press Ctrl-Shift-D
+        <ui:debug/>
     </h:form>
 </h:body>
 </html>
