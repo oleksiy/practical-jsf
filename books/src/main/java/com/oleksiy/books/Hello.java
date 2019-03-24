@@ -1,4 +1,10 @@
 package com.oleksiy.books;
 
-public class Hello {
+import javax.inject.Named;
+import java.io.Serializable;
+
+@Named
+
+public class Hello implements Serializable {
+
 }
