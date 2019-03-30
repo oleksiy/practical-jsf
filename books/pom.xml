@@ -56,5 +56,18 @@
             <version>8.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- If you're running this application on TomEE, you don't need these.
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>2.2.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>2.2.18</version>
+        </dependency>
+        -->
     </dependencies>
 </project>
